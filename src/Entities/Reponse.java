@@ -9,39 +9,39 @@ package Entities;
  *
  * @author Zaineb
  */
-class Note {
+class Reponse {
     int ID;
-    int note;
-    Examen examen;
-    Reponse reponse[];
+    String reponse;
+    Question question;
+    Note note;
 
-    public Note() {
+    public Reponse() {
     }
 
-    public Note(int ID, int note) {
+    public Reponse(int ID, String reponse) {
         this.ID = ID;
-        this.note = note;
+        this.reponse = reponse;
     }
 
     public int getID() {
         return ID;
     }
 
-    public Examen getExamen() {
-        return examen;
+    public String getReponse() {
+        return reponse;
     }
 
     public void setID(int ID) {
         this.ID = ID;
     }
 
-    public void setExamen(Examen examen) {
-        this.examen = examen;
+    public void setReponse(String reponse) {
+        this.reponse = reponse;
     }
 
     @Override
     public String toString() {
-        return "Note{" + "ID=" + ID + ", note=" + note + '}';
+        return "Reponse{" + "ID=" + ID + ", reponse=" + reponse + '}';
     }
     
     

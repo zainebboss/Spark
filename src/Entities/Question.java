@@ -14,6 +14,7 @@ public class Question {
     String question;
     String reponse;
     Examen examen[];
+    Reponse reponses[];
 
     public Question() {
     }

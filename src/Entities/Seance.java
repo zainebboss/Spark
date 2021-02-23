@@ -5,56 +5,68 @@
  */
 package Entities;
 
+import java.util.Date;
+
 /**
  *
  * @author Zaineb
  */
-class Examen {
+class Seance {
     int ID;
-    String titre;
+    Date date_seance;
     String description;
-    Question question[];
-    Note note[];
+    String lien;
+    Formation formation;
     Formateur formateur;
-    Cour cour;
+    Apprenant apprenant[];
 
-    public Examen() {
+    public Seance() {
     }
 
-    public Examen(int ID, String titre, String description) {
+    public Seance(int ID, Date date_seance, String description, String lien) {
         this.ID = ID;
-        this.titre = titre;
+        this.date_seance = date_seance;
         this.description = description;
+        this.lien = lien;
     }
 
     public int getID() {
         return ID;
     }
 
-    public String getTitre() {
-        return titre;
+    public Date getDate_seance() {
+        return date_seance;
     }
 
     public String getDescription() {
         return description;
     }
 
+    public String getLien() {
+        return lien;
+    }
+
     public void setID(int ID) {
         this.ID = ID;
     }
 
-    public void setTitre(String titre) {
-        this.titre = titre;
+    public void setDate_seance(Date date_seance) {
+        this.date_seance = date_seance;
     }
 
     public void setDescription(String description) {
         this.description = description;
     }
 
+    public void setLien(String lien) {
+        this.lien = lien;
+    }
+
     @Override
     public String toString() {
-        return "Examen{" + "ID=" + ID + ", titre=" + titre + ", description=" + description + '}';
+        return "Seance{" + "ID=" + ID + ", date_seance=" + date_seance + ", description=" + description + ", lien=" + lien + '}';
     }
+    
     
     
 }

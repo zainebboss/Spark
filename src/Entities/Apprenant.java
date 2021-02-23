@@ -11,28 +11,28 @@ import java.util.Date;
  *
  * @author Zaineb
  */
-class Formateur extends User{
+public class Apprenant extends User {
     String nom;
     String prenom;
     int telephone;
     String adresse;
     Date date_naissance;
-    String specialite;
     boolean enable;
     Seance seance[];
+    Inscription inscription[];
 
-    public Formateur() {
+    public Apprenant() {
     }
 
-    public Formateur(String nom, String prenom, int telephone, String adresse, Date date_naissance, String specialite, boolean enable, int ID, String email, String password) {
+    public Apprenant(String nom, String prenom, int telephone, String adresse, Date date_naissance, boolean enable, int ID, String email, String password) {
         super(ID, email, password);
         this.nom = nom;
         this.prenom = prenom;
         this.telephone = telephone;
         this.adresse = adresse;
         this.date_naissance = date_naissance;
-        this.specialite = specialite;
         this.enable = enable;
+        
     }
 
     public String getNom() {
@@ -53,10 +53,6 @@ class Formateur extends User{
 
     public Date getDate_naissance() {
         return date_naissance;
-    }
-
-    public String getSpecialite() {
-        return specialite;
     }
 
     public boolean isEnable() {
@@ -83,17 +79,15 @@ class Formateur extends User{
         this.date_naissance = date_naissance;
     }
 
-    public void setSpecialite(String specialite) {
-        this.specialite = specialite;
-    }
-
     public void setEnable(boolean enable) {
         this.enable = enable;
     }
 
     @Override
     public String toString() {
-        return super.toString() + "Formateur{" + "nom=" + nom + ", prenom=" + prenom + ", telephone=" + telephone + ", adresse=" + adresse + ", date_naissance=" + date_naissance + ", specialite=" + specialite + ", enable=" + enable + '}';
+        return super.toString() + "Apprenant{" + "nom=" + nom + ", prenom=" + prenom + ", telephone=" + telephone + ", adresse=" + adresse + ", date_naissance=" + date_naissance + ", enable=" + enable + '}';
     }
+    
+    
     
 }
