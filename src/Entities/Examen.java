@@ -10,5 +10,16 @@ package Entities;
  * @author Zaineb
  */
 class Examen {
+    int ID;
+    String titre;
+    String description;
+    Question question[];
+    Note note[];
+    Formateur formateur;
+    Cour cour;
+
+    public Examen() {
+    }
+    
     
 }
