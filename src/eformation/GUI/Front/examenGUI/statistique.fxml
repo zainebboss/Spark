@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="661.0" style="-fx-background-color: #88B0EE;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="piprojet.GUI.Front.examenGUI.StatistiqueController">
+    <stylesheets>
+        <URL value="@statistique.css" />
+    </stylesheets>
+   <children>
+      <BarChart fx:id="chart" layoutX="98.0" layoutY="51.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="52.0" layoutY="51.0" prefHeight="22.0" prefWidth="53.0" text="Score" textFill="#c63c3c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="598.0" layoutY="408.0" text="Matière" textFill="#c63c3c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="retour" layoutX="26.0" layoutY="439.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #C52C4B;" text="Retour" textFill="#4db1c3">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

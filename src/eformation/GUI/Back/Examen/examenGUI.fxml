@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #88B0EE;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="piprojet.GUI.Back.Examen.ExamenGUIController">
+    <stylesheets>
+        <URL value="@examengui.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="examens" layoutX="319.0" layoutY="57.0" onMouseClicked="#selectionnerExamen" prefHeight="265.0" prefWidth="256.0">
+        <columns>
+          <TableColumn fx:id="matiereCol" prefWidth="75.0" text="Matiere" />
+          <TableColumn fx:id="descriptionCol" prefWidth="175.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="supprimer" layoutX="471.0" layoutY="336.0" mnemonicParsing="false" onAction="#supprimerExamen" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #C52C4B;" text="Supprimer" textFill="#74d4e1">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <TextArea fx:id="description" layoutX="107.0" layoutY="166.0" prefHeight="136.0" prefWidth="199.0" />
+      <Label layoutX="17.0" layoutY="113.0" prefHeight="25.0" prefWidth="72.0" text="Matiere :" textFill="#cd5f5f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <ComboBox fx:id="listeMatiere" layoutX="105.0" layoutY="113.0" prefWidth="150.0" />
+      <Label layoutX="5.0" layoutY="200.0" prefHeight="84.0" prefWidth="87.0" text="Description :" textFill="#cd5252">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button fx:id="ajouter" layoutX="121.0" layoutY="310.0" mnemonicParsing="false" onAction="#ajouterExamen" style="-fx-background-color: #C52C4B;" text="Ajouter" textFill="#93f2ea">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button layoutX="189.0" layoutY="310.0" mnemonicParsing="false" onAction="#modifierExamen" style="-fx-background-color: #C52C4B;" text="Modifier" textFill="#7fd2e4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="112.0" layoutY="49.0" prefHeight="26.0" prefWidth="144.0" text="Gestion Examen" textFill="#d04848">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Button fx:id="preparerExamen" layoutX="316.0" layoutY="338.0" mnemonicParsing="false" onAction="#versPreparerExamen" prefHeight="29.0" prefWidth="150.0" style="-fx-background-color: #C52C4B;" text="Préparer examen" textFill="#9cdcfc">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="retour" layoutX="14.0" layoutY="350.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #C52C4B;" text="Retour" textFill="#90f2ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

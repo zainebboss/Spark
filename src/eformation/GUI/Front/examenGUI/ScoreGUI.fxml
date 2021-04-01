@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="270.0" prefWidth="503.0" style="-fx-background-color: #88B0EE;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="piprojet.GUI.Front.examenGUI.ScoreGUIController">
+    <stylesheets>
+        <URL value="@scoregui.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="38.0" layoutY="65.0" prefHeight="51.0" prefWidth="253.0" text="Votre Score :" textFill="#5848f0">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" layoutX="344.0" layoutY="67.0" text="Label" textFill="#f24848">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="mail" layoutX="145.0" layoutY="175.0" mnemonicParsing="false" onAction="#envoiMail" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #C52C4B;" text="Envoie Mail" textFill="#4a8fbf">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <ImageView fx:id="image" fitHeight="116.0" fitWidth="148.0" layoutX="318.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="sms" layoutX="304.0" layoutY="175.0" mnemonicParsing="false" onAction="#envoiSms" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: #C52C4B;" text="Envoie SMS" textFill="#4a8fbf">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="retour" layoutX="14.0" layoutY="224.0" mnemonicParsing="false" onAction="#retour" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: #C52C4B;" text="Retour" textFill="#4a8fbf">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

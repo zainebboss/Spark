@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #88B0EE;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="piprojet.GUI.Front.examenGUI.ExamenController">
+    <stylesheets>
+        <URL value="@examen.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="examens" layoutX="142.0" layoutY="53.0" onMouseClicked="#verspasserExamen" prefHeight="290.0" prefWidth="317.0">
+        <columns>
+          <TableColumn minWidth="0.0" prefWidth="0.0" />
+          <TableColumn fx:id="descriptionCol" prefWidth="316.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="retour" layoutX="42.0" layoutY="350.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #C52C4B;" text="retour" textFill="#2f89a4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="199.0" layoutY="14.0" text="Liste examens" textFill="#bc3c3c">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

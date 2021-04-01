@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #88B0EE;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="piprojet.GUI.Back.BackGuiController">
+    <stylesheets>
+        <URL value="@backgui.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="examen" layoutX="112.0" layoutY="147.0" mnemonicParsing="false" onAction="#gestionExamen" prefHeight="85.0" prefWidth="166.0" style="-fx-background-color: #C7D8F3;" text="Gestion Examens" textFill="#e13c3c">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="question" layoutX="330.0" layoutY="147.0" mnemonicParsing="false" onAction="#versQuestion" prefHeight="85.0" prefWidth="166.0" style="-fx-background-color: #C7D8F3;" text="Gestion questions" textFill="#e84141">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="retour" layoutX="504.0" layoutY="331.0" mnemonicParsing="false" onAction="#retour" prefHeight="42.0" prefWidth="72.0" style="-fx-background-color: #C52C4B;" text="Retour" textFill="#6686c3">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

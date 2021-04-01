@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #88B0EE;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="piprojet.GUI.Front.examenGUI.PasserExamenController">
+    <stylesheets>
+        <URL value="@passerexamen.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane fx:id="examen" layoutX="108.0" layoutY="24.0" prefHeight="350.0" prefWidth="408.0">
+         <content>
+            <VBox fx:id="questions" prefHeight="200.0" prefWidth="412.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="valider" layoutX="525.0" layoutY="349.0" mnemonicParsing="false" onAction="#valider" style="-fx-background-color: #C52C4B;" text="Valider" textFill="#2580bc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="retour" layoutX="27.0" layoutY="349.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #C52C4B;" text="retour" textFill="#2580bc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
